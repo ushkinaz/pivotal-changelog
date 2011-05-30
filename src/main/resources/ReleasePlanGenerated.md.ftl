@@ -8,15 +8,15 @@ Please note that version number **follows** stories to be released in that versi
 <#list doc.stories.story as row>
     <#if row.story_type == 'release'>
 
-    ## [${row.name}](${row.url})
+## [${row.name}](${row.url})
         <#if row.description !=''>
-        ### Summary:
-        ```
-        ${row.description}
-        ```
+### Summary:
+```
+${row.description}
+ ```
         </#if>
 
         <#elseif row.story_type == 'feature'>
-        * [${row.id}](${row.url}) ${row.name}
+* [${row.id}](${row.url}) ${row.name}
     </#if>
 </#list>
