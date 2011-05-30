@@ -16,6 +16,9 @@
 
 package com.googlecode.pivotalhub;
 
+import com.googlecode.commandme.CLIParser;
+import com.googlecode.commandme.annotations.Operand;
+import com.googlecode.commandme.annotations.Option;
 import freemarker.ext.dom.NodeModel;
 import freemarker.template.Configuration;
 import freemarker.template.DefaultObjectWrapper;
@@ -28,6 +31,8 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
@@ -40,30 +45,75 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ReleasePlanGenerator {
-    public static void main(String[] args) throws IOException, SAXException, TemplateException, ParserConfigurationException {
-        HttpClient client = new DefaultHttpClient();
-        HttpHost host = new HttpHost("www.pivotaltracker.com");
-        HttpRequest request = new HttpGet("http://www.pivotaltracker.com/services/v3/projects/102363/stories");
-        request.addHeader("X-TrackerToken", "c548939923824022039c7217b63e9ee7");
-        HttpResponse response = client.execute(host, request);
-        HttpEntity responseEntity = response.getEntity();
+    @SuppressWarnings({"UnusedDeclaration"})
+    private static final Logger LOGGER = LoggerFactory.getLogger(ReleasePlanGenerator.class);
 
-        initFreemarker(new InputSource(responseEntity.getContent()));
+    private int projectId;
+    private String template = "ReleasePlanGenerated.md.ftl";
+    private String    token;
+    private NodeModel model;
+
+    public static void main(String[] args) throws IOException, SAXException, TemplateException, ParserConfigurationException {
+        CLIParser.createModule(ReleasePlanGenerator.class).execute(args);
     }
 
-    private static void initFreemarker(InputSource inputSource) throws IOException, TemplateException, SAXException, ParserConfigurationException {
+
+    @Operand
+    public void process() throws TemplateException, IOException {
+        LOGGER.debug(">> process");
+
         Configuration cfg = new Configuration();
         cfg.setDirectoryForTemplateLoading(new File("."));
         cfg.setObjectWrapper(new DefaultObjectWrapper());
 
-        Template temp = cfg.getTemplate("ReleasePlanGenerated.md.ftl");
-        Writer out = new OutputStreamWriter(System.out);
+        Template temp = cfg.getTemplate(template);
         Map root = new HashMap();
+        root.put("doc", model);
 
-//        root.put("doc", NodeModel.parse(inputSource));
-        root.put("doc", NodeModel.parse(new File("resp.xml")));
+
+        Writer out = new OutputStreamWriter(System.out);
         temp.process(root, out);
 
         out.flush();
+
+        LOGGER.debug("<< process");
+    }
+
+    @Operand
+    public void fetch() throws IOException, SAXException, ParserConfigurationException {
+        LOGGER.debug(">> fetch");
+        HttpClient client = new DefaultHttpClient();
+        HttpHost host = new HttpHost("www.pivotaltracker.com");
+        HttpRequest request = new HttpGet("http://www.pivotaltracker.com/services/v3/projects/" + projectId + "/stories");
+        request.addHeader("X-TrackerToken", token);
+        HttpResponse response = client.execute(host, request);
+        HttpEntity responseEntity = response.getEntity();
+//        String out = EntityUtils.toString(response.getEntity());
+//        LOGGER.debug(out);
+        model = NodeModel.parse(new InputSource(responseEntity.getContent()));
+//        model = NodeModel.parse(new InputSource(new StringReader(out)));
+        LOGGER.debug("<< fetch");
+    }
+
+    @Operand
+    public void load() throws IOException, SAXException, ParserConfigurationException {
+        LOGGER.debug(">> load");
+        model = NodeModel.parse(new File("resp.xml"));
+        LOGGER.debug("<< load");
+    }
+
+    @Option(longName = "id", shortName = "i")
+    public void setProjectId(int projectId) {
+        this.projectId = projectId;
+    }
+
+    @Option
+    public void setTemplate(String template) {
+        this.template = template;
+    }
+
+    @Option
+    public void setToken(String token) {
+        this.token = token;
     }
 }
