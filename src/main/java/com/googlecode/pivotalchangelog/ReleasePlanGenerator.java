@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.googlecode.pivotalhub;
+package com.googlecode.pivotalchangelog;
 
 import com.googlecode.commandme.CLIParser;
 import com.googlecode.commandme.annotations.Operand;
