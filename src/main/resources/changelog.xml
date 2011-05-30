@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2010-2011, Dmitry Sidorenko. All Rights Reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<stories type="array" count="48" total="48">
+    <story>
+        <id type="integer">13378527</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>chore</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13378527</url>
+        <current_state>accepted</current_state>
+        <description>Move hosting</description>
+        <name>Organize mirror of project on bitbucket</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/13 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:01:11 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/17 00:00:00 MSD</accepted_at>
+    </story>
+    <story>
+        <id type="integer">13446725</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446725</url>
+        <estimate type="integer">3</estimate>
+        <current_state>accepted</current_state>
+        <description>HelloWorld&#160;greet</description>
+        <name>Execute a method marked as @Action</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:04:39 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/17 00:00:00 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191835</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/54cab69a7046d7cdf8b8e817f510c42466824d36
+
+                    [starts #13446725] Initial story test
+
+                    --HG--
+                    rename : examples/com/googlecode/commandme/examples/HelloWorld.java =&gt;
+                    src/test/java/com/googlecode/commandme/story/Story_13446725.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:44 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191837</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/0f2c3e477e9b5ad86c6cb6c31688d86f3ec0e7ad
+
+                    [continues #13446725] initial ActionsIntrospector.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:44 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191839</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/f65e3f7cee126e5fe6413e9ed9863f09ba4dd462
+
+                    [continues #13446725] ActionsIntrospector.java ready
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:44 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191841</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/48a62beca9b4cec00cfc5c3ca16832c843f8be1c
+
+                    [continues #13446725] InterrogatorFactory.java javadocs and small fixes
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:44 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191845</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/3bafb4616cfebfe0b0654a15722669977ac0fdde
+
+                    [finishes #13446725] Interrogator.java finishes story
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:45 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13447039</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13447039</url>
+        <estimate type="integer">5</estimate>
+        <current_state>accepted</current_state>
+        <description></description>
+        <name>Parse module definition and create CommandLine instance</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:01:11 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/17 00:00:00 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191827</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/0f737e59ab942a29194a9357fef35703b07a8a03
+
+                    [starts #13447039] Parse module definition and create CommandLine instance
+                    Adds generalization, better tests
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:44 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191829</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/0544f555643c2d9ce1abf57568a0b39119bb081b
+
+                    [starts #13447039] Parse module definition and create CommandLine instance
+                    Refactored interrogator
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:44 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191831</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/58ec7707dcbd61af8c83b4ffecdc35169a84ff0d
+
+                    [starts #13447039] introspectors
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:44 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191833</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/f2f01af2f7a6365daca5e6bb252c30593fd7ea44
+
+                    [fixes #13447039] Javadocs, API tuning
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:44 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13516449</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13516449</url>
+        <estimate type="integer">0</estimate>
+        <current_state>accepted</current_state>
+        <description></description>
+        <name>Handle duplicate names of actions</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/18 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:01:11 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/18 00:00:00 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191849</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/3aa6693b3368fef00bcce24eaeb78c84837a424e
+
+                    [finishes #13516449] Handling of duplicate names
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:45 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13446727</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446727</url>
+        <estimate type="integer">2</estimate>
+        <current_state>accepted</current_state>
+        <description>HelloWorld&#160;greet --name &quot;John Wo&quot;</description>
+        <name>Pass string parameter to a module using full name</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:04:40 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/20 00:00:00 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191847</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/3c4f76ede4cf1b0a673ece5fe94a7d2f467c299e
+
+                    [starts #13446727] Pass string parameter to a module using full name
+
+                    --HG--
+                    rename : src/test/java/com/googlecode/commandme/story/Story_13446725.java =&gt;
+                    src/test/java/com/googlecode/commandme/story/Story_13446727.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:45 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191851</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/ab162c878c8b71399c0056719680d7d9bc6d78b8
+
+                    [starts #13446727] Initial
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:45 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191853</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/cc489681596c00f258fdb7fb042f7076caa1f486
+
+                    [continues #13446727] Mocking preparation
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:45 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191855</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/4ceb75ad5ea742519b994beab6f541bafe7c6af3
+
+                    [continues #13446727] Initial work
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:45 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191857</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/9ba00157b2b07419d64c380e17b8cf013e652950
+
+                    [continues #13446727] Inspection of module parameters refactored to ParametersIntrospector.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:46 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191859</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/4abb6b68e812f1b45bd6ea0fc73a7ff4cb2bf33e
+
+                    [continues #13446727] Renamed test, added propertyDescription field
+
+                    --HG--
+                    rename : src/test/java/com/googlecode/commandme/impl/introspector/ModuleParametersTest.java =&gt;
+                    src/test/java/com/googlecode/commandme/impl/introspector/ParametersIntrospectorTest.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:46 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191861</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/3314e8dba0a546fa1320c7ce3af929de28004e59
+
+                    [continues #13446727] Introspection of params finished
+
+                    --HG--
+                    rename : src/main/java/com/googlecode/commandme/ActionDefinitionException.java =&gt;
+                    src/main/java/com/googlecode/commandme/ParameterDefinitionException.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:46 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191863</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/0a4f74f6d6d1e98ec92774f7b5971c51f122f1cf
+
+                    [finishes #13446727] updated Interrogator, Story unit test is green.
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:46 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13637047</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13637047</url>
+        <estimate type="integer">1</estimate>
+        <current_state>accepted</current_state>
+        <description></description>
+        <name>Provide CommandLine#shutdown to clean all references</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/20 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:01:11 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/20 00:00:00 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191865</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/f0e21f5fca408fa28b2b0b74dc552e489ae70a65
+
+                    [fixes #13637047] Provide CommandLine#shutdown to clean all references
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:46 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13496091</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13496091</url>
+        <estimate type="integer">0</estimate>
+        <current_state>accepted</current_state>
+        <description></description>
+        <name>Exception thrown by an action should stop processing</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/17 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:01:11 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/20 00:00:00 MSD</accepted_at>
+    </story>
+    <story>
+        <id type="integer">13644361</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13644361</url>
+        <estimate type="integer">0</estimate>
+        <current_state>accepted</current_state>
+        <description></description>
+        <name>Passing wrong action name in cmd should throw an exception</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/20 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:01:11 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/20 00:00:00 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191867</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/1bd2939056222ab2b9cea62a79df5d3cbf56a408
+
+                    [fixes #13644361] Passing wrong action name in cmd should throw an exception
+
+                    --HG--
+                    rename : src/main/java/com/googlecode/commandme/ActionDefinitionException.java =&gt;
+                    src/main/java/com/googlecode/commandme/ActionInvocationException.java
+                    rename : src/test/java/com/googlecode/commandme/story/Story_13446725.java =&gt;
+                    src/test/java/com/googlecode/commandme/story/Story_13644361.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:46 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13446729</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446729</url>
+        <estimate type="integer">1</estimate>
+        <current_state>accepted</current_state>
+        <description>HelloWorld&#160;greet --times 2</description>
+        <name>Pass integer parameter to an action using full name</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:04:40 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/21 00:00:00 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191869</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/3f5dce86187ef10ebd64f1933d9f407fd1a29c37
+
+                    [starts #13446729] Pass integer parameter to an action using full name
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:46 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191871</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/c28b6744ef846795b9f74a8a3136b35640807df6
+
+                    [continues #13446729] ParametersIntrospector.java ready
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:46 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191873</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/1a7c9785d41bd127fd02f1d662808052f46d3b2c
+
+                    [continues #13446729] One step closer to finish
+
+                    --HG--
+                    rename : src/main/java/com/googlecode/commandme/ActionInvocationException.java =&gt;
+                    src/main/java/com/googlecode/commandme/ParameterSettingException.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:47 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7191875</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/9f7bc8e668503532ab81bd94cd0a5223445aed42
+
+                    [finishes #13446729]
+
+                    Module [command-me]:
+                    * Interrogator.java
+                    * InterrogatorTest.java
+                    * Story_IntegerParams.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:47 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13631679</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13631679</url>
+        <estimate type="integer">0</estimate>
+        <current_state>accepted</current_state>
+        <description></description>
+        <name>Non BeanInfo compliant parameters</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/20 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:01:11 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/21 00:00:00 MSD</accepted_at>
+    </story>
+    <story>
+        <id type="integer">13446743</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446743</url>
+        <estimate type="integer">1</estimate>
+        <current_state>accepted</current_state>
+        <description>HelloWorld&#160;greet bye</description>
+        <name>Pass multiple actions in command line</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:04:40 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/21 00:00:00 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191881</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/a5879869aaa844d3308ff2b32d78020f196a88f8
+
+                    [finishes #13446743] Pass multiple actions in command line
+
+                    --HG--
+                    rename : src/test/java/com/googlecode/commandme/story/Story_DoubleParams.java =&gt;
+                    src/test/java/com/googlecode/commandme/story/Story_MultipleActions.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:47 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13446735</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446735</url>
+        <estimate type="integer">1</estimate>
+        <current_state>accepted</current_state>
+        <description>HelloWorld&#160;greet --money 50.3</description>
+        <name>Pass double type parameter to an action using full name</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:04:40 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/21 00:00:00 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191879</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/9bc46e8bb7a0e68def764e9ccd86b096d5697644
+
+                    [finishes #13446735] Pass double type parameter to an action using full name
+
+                    --HG--
+                    rename : src/test/java/com/googlecode/commandme/story/Story_BooleanParams.java =&gt;
+                    src/test/java/com/googlecode/commandme/story/Story_DoubleParams.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:47 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13446733</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446733</url>
+        <estimate type="integer">1</estimate>
+        <current_state>accepted</current_state>
+        <description>HelloWorld&#160;greet --heartly true</description>
+        <name>Pass boolean parameter to an action using full name</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:04:40 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/21 00:00:00 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191877</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/6aecec6a26cf5554288a5800c032ba46a56b5151
+
+                    [finishes #13446733] Pass boolean parameter to an action using full name
+
+                    --HG--
+                    rename : src/test/java/com/googlecode/commandme/story/Story_IntegerParams.java =&gt;
+                    src/test/java/com/googlecode/commandme/story/Story_BooleanParams.java
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:47 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13741359</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13741359</url>
+        <estimate type="integer">1</estimate>
+        <current_state>accepted</current_state>
+        <description></description>
+        <name>Give a warning if there are two or more parameters with the same autogenerated short name</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/24 09:25:15 MSD</created_at>
+        <updated_at type="datetime">2011/05/24 14:19:59 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/24 14:19:58 MSD</accepted_at>
+    </story>
+    <story>
+        <id type="integer">13724481</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13724481</url>
+        <estimate type="integer">0</estimate>
+        <current_state>accepted</current_state>
+        <description></description>
+        <name>Support any type of parameters that have public constructor with single String argument</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/24 00:20:45 MSD</created_at>
+        <updated_at type="datetime">2011/05/24 14:20:07 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/24 14:20:07 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7205277</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/de11b8ee33deeb1c1d781a4b52f658a785ebb0cb
+
+                    [finishes #13724481] Support any type of parameters that have public constructor with single String
+                    argument
+                    reworked parameter setting framework
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/24 01:27:08 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7225463</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/a32964ade775c9e875106eec895c67ae797dd56d
+
+                    [continues #13724481] some more work
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/24 19:45:54 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13762519</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13762519</url>
+        <estimate type="integer">2</estimate>
+        <current_state>accepted</current_state>
+        <description></description>
+        <name>Be compliant with http://www.gnu.org/software/libc/manual/html_node/Getopt-Long-Options.html</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/24 19:52:15 MSD</created_at>
+        <updated_at type="datetime">2011/05/26 10:56:16 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/26 10:56:16 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7237931</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/1385c832ee0c321c54ad41b3c27c83c63e89c208
+
+                    [starts #13762519] Guideline 7: Option-arguments should not be optional.
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/25 00:53:56 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7251759</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/4999079db58ce0bec18b76ef72e91b08bd37735a
+
+                    [finishes #13762519] No default values. So far.
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/25 14:54:52 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13446737</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446737</url>
+        <estimate type="integer">1</estimate>
+        <current_state>accepted</current_state>
+        <description>HelloWorld&#160;greet --heartly</description>
+        <name>Short form of boolean parameter, true</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/26 10:56:18 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/26 10:56:18 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7191883</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/562113732645309dde7221a0569be3a884782c2c
+
+                    [starts #13446737] Initial tests
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/23 21:30:47 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7205275</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/8c80d9f2dbc8845a118c6ff8730bf05d2fd25104
+
+                    [continues #13446737] fixed tests
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/24 01:27:07 MSD</noted_at>
+            </note>
+            <note>
+                <id type="integer">7251761</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/67f875ba2fa665536a29b43fba96ff0bf093ed47
+
+                    [continues #13446737] Disabling test for a while
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/25 14:54:53 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13830041</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13830041</url>
+        <estimate type="integer">1</estimate>
+        <current_state>accepted</current_state>
+        <description></description>
+        <name>Take care of correct slf4j settings</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/26 00:41:36 MSD</created_at>
+        <updated_at type="datetime">2011/05/26 22:53:06 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/26 22:53:06 MSD</accepted_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7283699</id>
+                <text>Commit
+                    https://github.com/ushkinaz/command-me/commit/c0b18ac203a0c3ee6f32cafdaf71864ff504f58f
+
+                    [starts #13830041] Take care of correct slf4j settings
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/26 13:18:06 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13454909</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>release</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13454909</url>
+        <current_state>accepted</current_state>
+        <description>* Only annotations driven
+            * Only simple type of options, string, boolean, integer, double
+            * Options are mapped to setters only
+            * Only operands with no options are supported
+        </description>
+        <name>version 0.5</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 22:52:56 MSD</updated_at>
+        <accepted_at type="datetime">2011/05/27 12:00:00 MSD</accepted_at>
+        <deadline type="datetime">2011/05/28 12:00:00 MSD</deadline>
+        <notes type="array">
+            <note>
+                <id type="integer">7312789</id>
+                <text>Published at
+                    https://repository-ushkinaz.forge.cloudbees.com/release/com/googlecode/commandme/commandme/0.5/
+                </text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/27 11:24:16 MSD</noted_at>
+            </note>
+        </notes>
+        <tasks type="array">
+            <task>
+                <id type="integer">2011447</id>
+                <description>do mvn:release</description>
+                <position>1</position>
+                <complete>true</complete>
+                <created_at type="datetime">2011/05/21 11:17:51 MSD</created_at>
+            </task>
+        </tasks>
+    </story>
+    <story>
+        <id type="integer">13931333</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13931333</url>
+        <estimate type="integer">2</estimate>
+        <current_state>started</current_state>
+        <description></description>
+        <name>Update wiki / documentation</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/28 16:18:07 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:36:26 MSD</updated_at>
+        <labels>documentation</labels>
+    </story>
+    <story>
+        <id type="integer">13892367</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>chore</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13892367</url>
+        <current_state>unstarted</current_state>
+        <description>try Gradle build system</description>
+        <name>Try Gradle</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/27 11:46:37 MSD</created_at>
+        <updated_at type="datetime">2011/05/28 16:19:28 MSD</updated_at>
+        <tasks type="array">
+            <task>
+                <id type="integer">2079593</id>
+                <description>can it work with jenkins?</description>
+                <position>1</position>
+                <complete>false</complete>
+                <created_at type="datetime">2011/05/27 11:46:37 MSD</created_at>
+            </task>
+            <task>
+                <id type="integer">2079595</id>
+                <description>can it work with eclipse?</description>
+                <position>2</position>
+                <complete>false</complete>
+                <created_at type="datetime">2011/05/27 11:46:37 MSD</created_at>
+            </task>
+            <task>
+                <id type="integer">2079597</id>
+                <description>command line from *nix?</description>
+                <position>3</position>
+                <complete>false</complete>
+                <created_at type="datetime">2011/05/27 11:46:37 MSD</created_at>
+            </task>
+        </tasks>
+    </story>
+    <story>
+        <id type="integer">13931337</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>chore</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13931337</url>
+        <current_state>unstarted</current_state>
+        <description></description>
+        <name>Communicate with the world</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/28 16:18:45 MSD</created_at>
+        <updated_at type="datetime">2011/05/28 16:19:02 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13446739</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446739</url>
+        <estimate type="integer">1</estimate>
+        <current_state>unstarted</current_state>
+        <description>HelloWorld&#160;greet --no-heartly
+            We need to decide on standard inverse naming
+        </description>
+        <name>Short form of boolean option, false</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:29:10 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13446747</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446747</url>
+        <estimate type="integer">2</estimate>
+        <current_state>unstarted</current_state>
+        <description>HelloWorld&#160;greet -t 2 -h -g:400 -n=&quot;John Woo&quot;</description>
+        <name>Use short names of any types of options</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:29:15 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13724555</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13724555</url>
+        <estimate type="integer">1</estimate>
+        <current_state>unstarted</current_state>
+        <description>HelloWorld -h -D
+            Upper case means false
+            lower case means true
+        </description>
+        <name>Shortest form of boolean options</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/24 00:22:27 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:29:19 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13446745</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446745</url>
+        <estimate type="integer">2</estimate>
+        <current_state>unstarted</current_state>
+        <description>HelloWorld&#160;greetFail</description>
+        <name>Handle exception @ErrorHandler</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/23 21:04:40 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13446749</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446749</url>
+        <estimate type="integer">2</estimate>
+        <current_state>unstarted</current_state>
+        <description>HelloWorld&#160;greet -hv</description>
+        <name>Clustering boolean options</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:29:30 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13446751</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446751</url>
+        <estimate type="integer">2</estimate>
+        <current_state>unstarted</current_state>
+        <description>HelloWorld&#160;--help
+            HelloWorld&#160;-?
+            HelloWorld&#160;-h
+        </description>
+        <name>Default help facility will use list of all actions and options with optional descriptions</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:29:38 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13446755</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446755</url>
+        <estimate type="integer">2</estimate>
+        <current_state>unstarted</current_state>
+        <description></description>
+        <name>Optional and required options</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:29:46 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13664357</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13664357</url>
+        <estimate type="integer">1</estimate>
+        <current_state>unstarted</current_state>
+        <description>true:
+            true
+            1
+            yes
+
+            false:
+            false
+            0
+            no
+
+            if anything else raise an exception
+        </description>
+        <name>Support flexible values for booleans</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/21 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:37:12 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13631693</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13631693</url>
+        <estimate type="integer">1</estimate>
+        <current_state>unstarted</current_state>
+        <description></description>
+        <name>@Options annotation on field</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/20 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:37:13 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13969179</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13969179</url>
+        <estimate type="integer">1</estimate>
+        <current_state>unstarted</current_state>
+        <description>HelloWorld -nJohn -t=500</description>
+        <name>Values for short options</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/30 19:27:09 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:37:28 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13496765</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13496765</url>
+        <estimate type="integer">3</estimate>
+        <current_state>unstarted</current_state>
+        <description></description>
+        <name>Actions can take parameters</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/17 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:37:34 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13458013</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>release</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13458013</url>
+        <current_state>unstarted</current_state>
+        <description>* Operands with options are supported. Options are separated to global and operand-specific
+            * Custom exception handling
+        </description>
+        <name>version 1.0</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/17 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 22:53:31 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13448895</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13448895</url>
+        <estimate type="integer">3</estimate>
+        <current_state>unstarted</current_state>
+        <description></description>
+        <name>Support configuration without annotations</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:37:40 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13969187</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13969187</url>
+        <estimate type="integer">3</estimate>
+        <current_state>unstarted</current_state>
+        <description>Consequent call to an option is considered as multiple value set
+            HelloWord --name John --name Dave
+
+            Option setter method can have following declaration
+            setter(Type value) - multiple calls
+            setter(Collection&lt;Type&gt; value)
+            setter(&lt;Type&gt; value...)
+        </description>
+        <name>Multiple Arguments for a single option</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/30 19:27:29 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:37:55 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13496135</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>release</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13496135</url>
+        <current_state>unstarted</current_state>
+        <description>* Annotation-less configuration</description>
+        <name>version 2.0</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/17 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 22:53:43 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13448943</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13448943</url>
+        <estimate type="integer">3</estimate>
+        <current_state>unstarted</current_state>
+        <description></description>
+        <name>Support creation of generic objects for passing as options</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:38:17 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13632083</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13632083</url>
+        <estimate type="integer">5</estimate>
+        <current_state>unstarted</current_state>
+        <description></description>
+        <name>Add less restrictive exception handling</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/20 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:38:19 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13446753</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13446753</url>
+        <estimate type="integer">2</estimate>
+        <current_state>unstarted</current_state>
+        <description>HelloWorld&#160;greet</description>
+        <name>Default values for options</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/16 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:38:35 MSD</updated_at>
+        <notes type="array">
+            <note>
+                <id type="integer">7336705</id>
+                <text>Not sure if we need it</text>
+                <author>Dmitry Sidorenko</author>
+                <noted_at type="datetime">2011/05/28 09:59:16 MSD</noted_at>
+            </note>
+        </notes>
+    </story>
+    <story>
+        <id type="integer">13969201</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13969201</url>
+        <estimate type="integer">1</estimate>
+        <current_state>unstarted</current_state>
+        <description></description>
+        <name>Clustering short options if none requires values</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/30 19:28:07 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:38:42 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13969283</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13969283</url>
+        <estimate type="integer">1</estimate>
+        <current_state>unstarted</current_state>
+        <description></description>
+        <name>Abbreviating Long Options</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/30 19:30:50 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:38:51 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13969313</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13969313</url>
+        <estimate type="integer">1</estimate>
+        <current_state>unstarted</current_state>
+        <description>Sometimes it is useful to allow many different options to share the same meaning in the program
+            that uses them.
+        </description>
+        <name>Synonyms of Options</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/30 19:32:14 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:38:55 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13496145</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>release</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13496145</url>
+        <current_state>unstarted</current_state>
+        <description>* Complex option types, automatic creation of option value objects</description>
+        <name>version 3.0</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <owned_by>Dmitry Sidorenko</owned_by>
+        <created_at type="datetime">2011/05/17 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 22:53:55 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13764433</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13764433</url>
+        <estimate type="integer">1</estimate>
+        <current_state>unscheduled</current_state>
+        <description>http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap12.html
+            Guideline 10:
+            The argument -- should be accepted as a delimiter indicating the end of options. Any following arguments
+            should be treated as operands, even if they begin with the '-' character. The -- argument should not be used
+            as an option or as an operand.
+        </description>
+        <name>Special treatment for &quot;--&quot;</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/24 20:20:26 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:12:30 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13762497</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13762497</url>
+        <estimate type="integer">2</estimate>
+        <current_state>unscheduled</current_state>
+        <description></description>
+        <name>Be compliant with http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap12.html</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/24 19:51:47 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:39:05 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13969323</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13969323</url>
+        <estimate type="integer">2</estimate>
+        <current_state>unscheduled</current_state>
+        <description>Can specify separator for optional value</description>
+        <name>Concise Specification of Multiple Arguments for an Option</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/30 19:32:57 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:39:14 MSD</updated_at>
+    </story>
+    <story>
+        <id type="integer">13660925</id>
+        <project_id type="integer">102363</project_id>
+        <story_type>feature</story_type>
+        <url>http://www.pivotaltracker.com/story/show/13660925</url>
+        <estimate type="integer">2</estimate>
+        <current_state>unscheduled</current_state>
+        <description></description>
+        <name>Pass integer options in radix different from 10</name>
+        <requested_by>Dmitry Sidorenko</requested_by>
+        <created_at type="datetime">2011/05/21 00:00:00 MSD</created_at>
+        <updated_at type="datetime">2011/05/30 19:38:27 MSD</updated_at>
+    </story>
+</stories>

@@ -46,11 +46,13 @@ public class ReleasePlanGenerator {
     @SuppressWarnings({"UnusedDeclaration"})
     private static final Logger LOGGER = LoggerFactory.getLogger(ReleasePlanGenerator.class);
 
-    private int projectId;
-    private String template = "ReleasePlanGenerated.md.ftl";
-    private String    token;
     private NodeModel model;
-    private String    filter;
+
+    private int    projectId;
+    private String token;
+    private String filter;
+    private String changelog = "changelog.xml";
+    private String outputDir = "./";
 
     public ReleasePlanGenerator() throws UnsupportedEncodingException {
         filter = URLEncoder.encode("type:Release", "UTF-8");
@@ -66,18 +68,22 @@ public class ReleasePlanGenerator {
         LOGGER.debug(">> process");
 
         Configuration cfg = new Configuration();
-        cfg.setDirectoryForTemplateLoading(new File("."));
+        File templatesDirectory = new File(".");
+        cfg.setDirectoryForTemplateLoading(templatesDirectory);
         cfg.setObjectWrapper(new DefaultObjectWrapper());
 
-        Template temp = cfg.getTemplate(template);
-        Map<String, NodeModel> root = new HashMap<String, NodeModel>();
-        root.put("doc", model);
 
+        for (File entry : templatesDirectory.listFiles(new TemplatesFilenameFilter())) {
+            Template template1 = cfg.getTemplate(entry.getName());
+            Map<String, NodeModel> root = new HashMap<String, NodeModel>();
+            root.put("doc", model);
 
-        Writer out = new OutputStreamWriter(System.out);
-        temp.process(root, out);
+            String outputFileName = entry.getName().replaceFirst(".ftl$", "");
+            Writer out = new OutputStreamWriter(new FileOutputStream(outputDir + outputFileName));
+            template1.process(root, out);
 
-        out.flush();
+            out.flush();
+        }
 
         LOGGER.debug("<< process");
     }
@@ -91,17 +97,14 @@ public class ReleasePlanGenerator {
         request.addHeader("X-TrackerToken", token);
         HttpResponse response = client.execute(host, request);
         HttpEntity responseEntity = response.getEntity();
-//        String out = EntityUtils.toString(response.getEntity());
-//        LOGGER.debug(out);
         model = NodeModel.parse(new InputSource(responseEntity.getContent()));
-//        model = NodeModel.parse(new InputSource(new StringReader(out)));
         LOGGER.debug("<< fetch");
     }
 
     @Operand
     public void load() throws IOException, SAXException, ParserConfigurationException {
         LOGGER.debug(">> load");
-        model = NodeModel.parse(new File("resp.xml"));
+        model = NodeModel.parse(new File(changelog));
         LOGGER.debug("<< load");
     }
 
@@ -111,12 +114,24 @@ public class ReleasePlanGenerator {
     }
 
     @Option
-    public void setTemplate(String template) {
-        this.template = template;
+    public void setToken(String token) {
+        this.token = token;
     }
 
     @Option
-    public void setToken(String token) {
-        this.token = token;
+    public void setChangelog(String changelog) {
+        this.changelog = changelog;
+    }
+
+    @Option
+    public void setOutputDir(String outputDir) {
+        this.outputDir = outputDir;
+    }
+
+    private class TemplatesFilenameFilter implements FilenameFilter {
+        @Override
+        public boolean accept(File dir, String name) {
+            return name.endsWith(".ftl");
+        }
     }
 }
