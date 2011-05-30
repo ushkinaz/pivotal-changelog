@@ -37,10 +37,8 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.File;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
+import java.io.*;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -52,6 +50,11 @@ public class ReleasePlanGenerator {
     private String template = "ReleasePlanGenerated.md.ftl";
     private String    token;
     private NodeModel model;
+    private String    filter;
+
+    public ReleasePlanGenerator() throws UnsupportedEncodingException {
+        filter = URLEncoder.encode("type:Release", "UTF-8");
+    }
 
     public static void main(String[] args) throws IOException, SAXException, TemplateException, ParserConfigurationException {
         CLIParser.createModule(ReleasePlanGenerator.class).execute(args);
@@ -84,7 +87,7 @@ public class ReleasePlanGenerator {
         LOGGER.debug(">> fetch");
         HttpClient client = new DefaultHttpClient();
         HttpHost host = new HttpHost("www.pivotaltracker.com");
-        HttpRequest request = new HttpGet("http://www.pivotaltracker.com/services/v3/projects/" + projectId + "/stories");
+        HttpRequest request = new HttpGet("http://www.pivotaltracker.com/services/v3/projects/" + projectId + "/stories?filter=" + filter);
         request.addHeader("X-TrackerToken", token);
         HttpResponse response = client.execute(host, request);
         HttpEntity responseEntity = response.getEntity();
