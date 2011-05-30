@@ -14,20 +14,78 @@
   ~ limitations under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.googlecode.pivotalchangelog</groupId>
     <artifactId>pivotal-changelog</artifactId>
-    <version>1.0</version>
     <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
 
-    <name>pivotal-hub</name>
-    <url>http://maven.apache.org</url>
+    <name>Pivotal Changelog</name>
+
+    <url>http://ushkinaz.github.com/pivotal-changelog/</url>
+    <description></description>
+    <inceptionYear>2011</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>Apache License Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Dmitry Sidorenko</name>
+        <url>https://github.com/ushkinaz/</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>dmitry.sidorenko</id>
+            <name>Dmitry Sidorenko</name>
+            <email>rustydragon@gmail.com</email>
+            <timezone>3</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/ushkinaz/pivotal-changelog</url>
+        <connection>scm:git:git://github.com/ushkinaz/pivotal-changelog.git</connection>
+        <developerConnection>scm:git:git@github.com:ushkinaz/pivotal-changelog.git</developerConnection>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub issues</system>
+        <url>https://github.com/ushkinaz/pivotal-changelog/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <url>https://ushkinaz.ci.cloudbees.com/</url>
+        <system>Jenkins</system>
+    </ciManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>cloudbee-release</id>
+            <url>https://repository-ushkinaz.forge.cloudbees.com/release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>cloudbee-snapshot</id>
+            <url>https://repository-ushkinaz.forge.cloudbees.com/snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!--Compiler flags-->
+        <build.debug>true</build.debug>
+        <build.optimize>false</build.optimize>
+
+        <!--Libraries versions -->
+        <slf4j.version>1.6.1</slf4j.version>
+
     </properties>
 
     <dependencies>
@@ -52,15 +110,14 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.6.1</version>
+            <version>${slf4j.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
-            <version>1.6.1</version>
+            <version>${slf4j.version}</version>
         </dependency>
-
 
         <dependency>
             <groupId>junit</groupId>
@@ -68,5 +125,36 @@
             <version>4.8.2</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
+
+    <build>
+        <defaultGoal>test</defaultGoal>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <target>6</target>
+                    <source>6</source>
+                    <debug>${build.debug}</debug>
+                    <optimize>${build.optimize}</optimize>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <!--Activated for release-->
+            <id>release</id>
+            <properties>
+                <build.debug>false</build.debug>
+                <build.optimize>true</build.optimize>
+            </properties>
+        </profile>
+    </profiles>
 </project>
