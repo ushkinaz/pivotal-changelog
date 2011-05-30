@@ -70,7 +70,7 @@ public class ReleasePlanGenerator {
         cfg.setObjectWrapper(new DefaultObjectWrapper());
 
         Template temp = cfg.getTemplate(template);
-        Map root = new HashMap();
+        Map<String, NodeModel> root = new HashMap<String, NodeModel>();
         root.put("doc", model);
 
 
