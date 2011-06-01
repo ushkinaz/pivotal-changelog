@@ -17,7 +17,7 @@
 package com.googlecode.pivotalchangelog;
 
 import com.googlecode.commandme.CLIParser;
-import com.googlecode.commandme.annotations.Operand;
+import com.googlecode.commandme.annotations.Action;
 import com.googlecode.commandme.annotations.Option;
 import freemarker.ext.dom.NodeModel;
 import freemarker.template.Configuration;
@@ -63,7 +63,7 @@ public class ReleasePlanGenerator {
     }
 
 
-    @Operand
+    @Action
     public void process() throws TemplateException, IOException {
         LOGGER.debug(">> process");
 
@@ -88,7 +88,7 @@ public class ReleasePlanGenerator {
         LOGGER.debug("<< process");
     }
 
-    @Operand
+    @Action
     public void fetch() throws IOException, SAXException, ParserConfigurationException {
         LOGGER.debug(">> fetch");
         HttpClient client = new DefaultHttpClient();
@@ -101,7 +101,7 @@ public class ReleasePlanGenerator {
         LOGGER.debug("<< fetch");
     }
 
-    @Operand
+    @Action
     public void load() throws IOException, SAXException, ParserConfigurationException {
         LOGGER.debug(">> load");
         model = NodeModel.parse(new File(changelog));

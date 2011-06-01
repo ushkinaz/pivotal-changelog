@@ -707,7 +707,7 @@
         <description>* Only annotations driven
             * Only simple type of options, string, boolean, integer, double
             * Options are mapped to setters only
-            * Only operands with no options are supported
+            * Only actions with no options are supported
         </description>
         <name>version 0.5</name>
         <requested_by>Dmitry Sidorenko</requested_by>
@@ -967,7 +967,7 @@
         <story_type>release</story_type>
         <url>http://www.pivotaltracker.com/story/show/13458013</url>
         <current_state>unstarted</current_state>
-        <description>* Operands with options are supported. Options are separated to global and operand-specific
+        <description>* Actions with options are supported. Options are separated to global and action-specific
             * Custom exception handling
         </description>
         <name>version 1.0</name>
@@ -1133,8 +1133,8 @@
         <description>http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap12.html
             Guideline 10:
             The argument -- should be accepted as a delimiter indicating the end of options. Any following arguments
-            should be treated as operands, even if they begin with the '-' character. The -- argument should not be used
-            as an option or as an operand.
+            should be treated as actions, even if they begin with the '-' character. The -- argument should not be used
+            as an option or as an action.
         </description>
         <name>Special treatment for &quot;--&quot;</name>
         <requested_by>Dmitry Sidorenko</requested_by>
